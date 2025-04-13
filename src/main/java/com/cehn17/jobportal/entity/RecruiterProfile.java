@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class RecruiterProfile {
 
     @Id
-    private int userAccountId;
+    private Integer userAccountId;
 
     @OneToOne
     @JoinColumn(name = "user_account_id")
@@ -30,7 +30,7 @@ public class RecruiterProfile {
     public RecruiterProfile() {
     }
 
-    public RecruiterProfile(int userAccountId, User userId, String firstName, String lastName, String city, String state, String country, String company, String profilePhoto) {
+    public RecruiterProfile(Integer userAccountId, User userId, String firstName, String lastName, String city, String state, String country, String company, String profilePhoto) {
         this.userAccountId = userAccountId;
         this.userId = userId;
         this.firstName = firstName;
@@ -46,11 +46,11 @@ public class RecruiterProfile {
         this.userId = user;
     }
 
-    public int getUserAccountId() {
+    public Integer getUserAccountId() {
         return userAccountId;
     }
 
-    public void setUserAccountId(int userAccountId) {
+    public void setUserAccountId(Integer userAccountId) {
         this.userAccountId = userAccountId;
     }
 

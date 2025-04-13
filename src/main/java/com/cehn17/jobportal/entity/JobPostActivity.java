@@ -156,6 +156,22 @@ public class JobPostActivity {
         this.jobTitle = jobTitle;
     }
 
+    public Boolean getIsActive() {
+        return isActive;
+    }
+
+    public void setIsActive(Boolean active) {
+        isActive = active;
+    }
+
+    public Boolean getIsSaved() {
+        return isSaved;
+    }
+
+    public void setIsSaved(Boolean saved) {
+        isSaved = saved;
+    }
+
     @Override
     public String toString() {
         return "JobPostActivity{" +
@@ -173,4 +189,7 @@ public class JobPostActivity {
                 ", jobTitle='" + jobTitle + '\'' +
                 '}';
     }
+
+
+
 }

@@ -30,7 +30,6 @@ import java.util.Optional;
 @RequestMapping("/job-seeker-profile")
 public class JobSeekerProfileController {
     private JobSeekerProfileService jobSeekerProfileService;
-
     private UserRepository userRepository;
 
     @Autowired
